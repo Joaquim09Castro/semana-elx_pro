@@ -1,4 +1,15 @@
-/* This file is for your main application css. */
+$bg-color: #fff;
+$detail-color: #ffe9ce;
+$detail-color-2: #4e51bf;
+$detail-color-3: #24252a;
+$detail-color-4: #ff92a4;
+
+$error-collor: #f00;
+
+$gradient-detail: linear-gradient(-45deg, $detail-color, $bg-color);
+
+@import "./global";
+@import "./card/index/index";
 @import "../node_modules/nprogress/nprogress.css";
 
 /* LiveView specific classes for your customizations */
