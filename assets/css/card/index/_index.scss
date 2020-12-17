@@ -23,7 +23,7 @@ form#create-card {
     border: 2px solid $detail-color-2;
     border-right: 0;
 
-    a.error {
+    &.error {
       border-color: $error-collor;
     }
 
@@ -40,7 +40,8 @@ form#create-card {
     border: none;
     border-radius: 0 15px 15px 0;
     font-weight: bold;
-    letter-spacing: 4px;
+    padding: 0 3%;
+    letter-spacing: 0.2em;
     transition: 0.3s;
 
     &:hover {

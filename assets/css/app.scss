@@ -4,7 +4,7 @@ $detail-color-2: #4e51bf;
 $detail-color-3: #24252a;
 $detail-color-4: #ff92a4;
 
-$error-collor: #f00;
+$error-collor: rgb(234, 111, 134);
 
 $gradient-detail: linear-gradient(-45deg, $detail-color, $bg-color);
 
@@ -13,9 +13,16 @@ $gradient-detail: linear-gradient(-45deg, $detail-color, $bg-color);
 @import "./card/info/info";
 @import "../node_modules/nprogress/nprogress.css";
 
+.invalid-feedback {
+  color: $error-collor;
+  display: block;
+  position: absolute;
+  margin: 40px 2% 0;
+}
+
 /* LiveView specific classes for your customizations */
 // .phx-no-feedback.invalid-feedback,
-// .phx-no-feedback .invalid-feedback {
+// .phx-no-feedback.invalid-feedback {
 //   display: none;
 // }
 
@@ -94,9 +101,4 @@ $gradient-detail: linear-gradient(-45deg, $detail-color, $bg-color);
 // }
 // .alert:empty {
 //   display: none;
-// }
-// .invalid-feedback {
-//   color: #a94442;
-//   display: block;
-//   margin: -1rem 0 2rem;
 // }
