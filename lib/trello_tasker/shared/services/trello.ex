@@ -46,7 +46,6 @@ defmodule TrelloTasker.Shared.Services.Trello do
         completed: body["dueComplete"],
         deliver_date: delivery_date |> DateTime.to_date()
       }
-      |> IO.inspect()
     end
   end
 end
