@@ -10,7 +10,6 @@ defmodule TrelloTaskerWeb.CardLive do
   @impl true
   def mount(_params, _session, socket) do
     changeset = Card.changeset(%Card{})
-    # card = Trello.get_card("YJTz9VoY")
 
     cards =
       Cards.list_cards()
