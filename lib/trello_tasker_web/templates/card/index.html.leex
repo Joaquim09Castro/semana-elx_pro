@@ -10,7 +10,7 @@
 
   <div class="cards">
   <%= for card <- @cards do %>
-    <%= live_redirect to: Routes.card_info_path(@socket, :index, card.card_id, id: "card-#{card.card_id}") do %>
+    <%= live_redirect to: Routes.card_info_path(@socket, :index, card.card_id) do %>
       <img
         src="<%= card.image %>"
         alt="">
@@ -23,6 +23,6 @@
         </div>
         <i class="fa fa-caret-right"></i>
     <% end %>
-    <% end %>
+  <% end %>
   </div>
 </section>

@@ -12,20 +12,19 @@ defmodule TrelloTasker.Shared.Services.Trello do
     {:ok, response} =
       "#{card_id}/actions?commentCard&key=#{@key}&token=#{@token}"
       |> get()
-      |> IO.inspect
 
     body = response.body
 
     body
     |> Enum.map(&%{text: &1["data"]["text"], author: &1["memberCreator"]["fullName"]})
-    |> IO.inspect()
   end
 
   def get_card(card_id) do
-    default_image = "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80"
+    default_image =
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1348&q=80"
 
     {:ok, response} =
-      "#{card_id}?list=true&key=#{@key}&token=#{@token}"
+      "#{card_id}?key=#{@key}&token=#{@token}"
       |> get()
 
     status = response.status
