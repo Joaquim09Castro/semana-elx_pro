@@ -31,7 +31,4 @@ defmodule TrelloTasker.Shared.Services.CreateCard do
     CardCacheClient.save(@table, [card_trello | cards])
     {:ok, card}
   end
-
-  # defp return_call({}), do:
-  # defp return_call({}), do:
 end
