@@ -24,7 +24,8 @@ body, input, button {
     position: absolute;
     width: 1000px;
     height: 1000px;
-    border-radius: 50%;
+    box-shadow: 10px 6px 20px $detail-color-4;
+    border-radius: 100%;
     background: $gradient-detail;
     top: -10%;
     right: 48%;
