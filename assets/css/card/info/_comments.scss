@@ -14,8 +14,12 @@
     transition: transform 0.5s, background-color 0.4s;
 
     &:hover {
-      background-color: darken($bg-color, 2);
+      background-color: lighten($detail-color-4, 5);
       transform: translateX(4%);
+
+      i {
+        color: invert($detail-color-4);
+      }
     }
 
     &+a {

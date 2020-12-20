@@ -13,6 +13,10 @@ a {
   &:hover {
     background-color: lighten($detail-color-4, 5);
     transform: translateX(4%);
+
+    i {
+      color: invert($detail-color-4);
+    }
   }
 
   & + a {
