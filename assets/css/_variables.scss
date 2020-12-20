@@ -1,0 +1,10 @@
+$bg-color: #1A1A1A;
+$detail-color-1: #543864;
+$detail-color-2: #a73fc9;
+$detail-color-3: #FF6363;
+$detail-color-4: #FFBD69;
+
+$error-collor: #b30b2d;
+
+$gradient-bg: radial-gradient(closest-corner at 55% 70%, darken($detail-color-4, 20) ,darken($detail-color-4, 55), darken($detail-color-1, 8));
+$gradient-detail: linear-gradient(-45deg, darken($detail-color-4, 25) 15%, darken($detail-color-2, 28), $bg-color 80%);

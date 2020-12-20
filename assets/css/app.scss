@@ -1,13 +1,4 @@
-$bg-color: #fff;
-$detail-color: #ffe9ce;
-$detail-color-2: #4e51bf;
-$detail-color-3: #24252a;
-$detail-color-4: #ff92a4;
-
-$error-collor: rgb(234, 111, 134);
-
-$gradient-detail: linear-gradient(-45deg, $detail-color, $bg-color);
-
+@import "./variables";
 @import "../node_modules/nprogress/nprogress.css";
 @import "./global";
 @import "./card/index/index";

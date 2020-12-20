@@ -44,10 +44,10 @@ section.card-info {
 
         i {
           font-size: 23px;
-          color: $detail-color-4;
+          color: saturate($detail-color-2, 10);
 
           &.is-late {
-            color: $detail-color-2;
+            color: darken($detail-color-4, 20);
           }
         }
       }

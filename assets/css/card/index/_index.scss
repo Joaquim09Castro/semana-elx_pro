@@ -22,13 +22,19 @@ form#create-card {
     color: $detail-color-3;
     border: 2px solid $detail-color-2;
     border-right: 0;
+    background-color: lighten( $bg-color, 30);
+    transition: background-color 0.35s;
 
     &.error {
       border-color: $error-collor;
     }
 
     &::placeholder  {
-      color: lighten($detail-color-3, 50);
+      color: lighten($detail-color-4, 25);
+    }
+
+    &:focus {
+      background-color: lighten($bg-color, 50);
     }
   }
 
@@ -36,7 +42,7 @@ form#create-card {
     width: 210px;
     height: 40px;
     background: $detail-color-2;
-    color: $bg-color;
+    color: lighten($bg-color, 3);
     border: none;
     border-radius: 0 15px 15px 0;
     font-weight: bold;
@@ -46,6 +52,7 @@ form#create-card {
 
     &:hover {
       background: lighten($detail-color-2, 5);
+      color: darken($detail-color-1, 20);
     }
   }
 }

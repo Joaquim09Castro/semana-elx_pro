@@ -1,6 +1,6 @@
 a {
-  background: darken($bg-color, 2);
-  border: 1px solid $detail-color-2;
+  background-color: lighten($bg-color, 2);
+  border: 1px solid desaturate($detail-color-2, 20);
   border-radius: 15px;
   width: 100%;
   padding: 12px;
@@ -8,10 +8,10 @@ a {
 
   display: flex;
   align-items: center;
-  transition: transform 0.5s;
+  transition: transform 0.5s, background-color 0.4s;
 
   &:hover {
-    background: lighten($detail-color-2, 70);
+    background-color: darken($bg-color, 2);
     transform: translateX(4%);
   }
 

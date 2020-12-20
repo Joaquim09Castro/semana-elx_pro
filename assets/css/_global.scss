@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: $bg-color;
+  height: 100%;
+  background: $gradient-bg no-repeat fixed;
 }
 
 body, input, button {
@@ -38,18 +39,18 @@ header#main {
   justify-content: space-between;
 
   strong {
-    color: $detail-color-2;
+    color: $detail-color-3;
   }
 
   a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: $detail-color-2;
+    color: $detail-color-3;
     transition: color 0.4s;
 
     &:hover {
-      color: darken($detail-color-2, 20);
+      color: darken($detail-color-3, 20);
     }
 
     i {
