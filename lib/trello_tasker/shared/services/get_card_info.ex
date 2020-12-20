@@ -2,11 +2,10 @@ defmodule TrelloTasker.Shared.Services.GetCardInfo do
   alias TrelloTasker.Shared.Services.Trello
   alias TrelloTasker.Shared.Providers.CacheProvider.CardCacheClient
 
-  @table "cards-list"
+  @table "card-list"
 
   def execute(id) do
     CardCacheClient.recover(id)
-    |> IO.inspect(label: "recover ID")
     |> case do
       {:ok, {card_comments, card_info}} ->
         {card_comments, card_info}
