@@ -7,7 +7,6 @@ defmodule TrelloTasker.Shared.Services.FindAllCards do
 
   def execute do
     CardCacheClient.recover(@table)
-    |> IO.inspect()
     |> case do
       {:not_found, []} ->
         cards = Cards.list_cards() |> Enum.map(&Trello.get_card(&1.path))
